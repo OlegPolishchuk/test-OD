@@ -1,0 +1,50 @@
+.button {
+  outline: 2px solid transparent;
+  border: 0;
+  border-radius: var(--radius);
+
+  font-weight: bolder;
+  font-size: 16px;
+
+  color: #fff;
+}
+
+.md {padding: 10px 16px}
+.lg {padding: 16px 20px}
+
+/* colorTheme */
+.default {
+  background: var(--color-blue-500);
+}
+
+.success {
+  background: var(--color-success);
+}
+
+.danger {
+  background: var(--color-danger);
+}
+
+.solid {
+  color: #fff;
+}
+
+.link {
+  color: var(--color-blue-700);
+  background: transparent;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+

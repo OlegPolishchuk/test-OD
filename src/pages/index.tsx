@@ -5,7 +5,7 @@ import { GetServerSideProps, NextPage } from 'next';
 import styles from '../styles/Home.module.css';
 
 import { ProductsAPI } from '@/api';
-import { Card } from '@/components';
+import { Button, Card } from '@/components';
 import { Product } from '@/types';
 
 interface Props {
@@ -19,13 +19,13 @@ const Home: NextPage<Props> = ({ products }): ReactElement => {
       ))}
 
       <div className={styles.pagination}>
-        <button className={styles.button} type="button">
+        <Button colorScheme="default" type="button">
           Prev
-        </button>
+        </Button>
         <span>1</span>
-        <button className={styles.button} type="button">
+        <Button colorScheme="success" type="button">
           Next
-        </button>
+        </Button>
       </div>
     </div>
   );

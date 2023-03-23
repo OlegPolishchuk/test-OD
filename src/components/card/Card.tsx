@@ -4,6 +4,7 @@ import Image from 'next/image';
 
 import styles from './Card.module.css';
 
+import { Button } from '@/components';
 import { Product } from '@/types';
 
 interface Props {
@@ -22,9 +23,7 @@ export const Card = ({ product }: Props): ReactElement => {
       </div>
 
       <div className={styles.product_controls}>
-        <button className={styles.button} type="button">
-          Add to card
-        </button>
+        <Button>Add to card</Button>
       </div>
     </div>
   );
