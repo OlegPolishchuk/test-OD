@@ -85,6 +85,8 @@
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/no-unknown-property": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [
