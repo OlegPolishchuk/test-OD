@@ -1,0 +1,13 @@
+.products_container {
+  margin: 20px 0;
+}
+
+@media (min-width: 720px) {
+  .products_container {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

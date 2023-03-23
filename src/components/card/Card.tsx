@@ -15,6 +15,7 @@ export const Card = ({ product }: Props): ReactElement => {
 
   return (
     <div key={id} className={styles.productContainer}>
+      <h3 className={`badge badge-secondary ${styles.badge}`}>New</h3>
       <Image src={images[1]} alt={title} width={300} height={300} />
       <div className={styles.product_description}>
         <h3 className={styles.product_title}>{title}</h3>
