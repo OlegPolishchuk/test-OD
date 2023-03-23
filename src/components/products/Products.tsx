@@ -2,8 +2,6 @@ import React, { ReactElement } from 'react';
 
 import { useRouter } from 'next/router';
 
-import styles from './Products.module.css';
-
 import { Card, Pagination } from '@/components';
 import { PAGINATION } from '@/shared';
 import { Product } from '@/types';
@@ -43,9 +41,13 @@ export const Products = ({ products }: Props): ReactElement => {
         disabledPrev={prevPageDisabled}
       />
 
-      <div className={styles.products_container}>
-        {products.map(product => (
-          <Card key={product.id} product={product} />
+      <div className="products_container">
+        {products.map((product, index) => (
+          <Card
+            key={product.id}
+            product={product}
+            className={index === PAGINATION.limit - 1 ? 'align-self-start-md' : ''}
+          />
         ))}
       </div>
 

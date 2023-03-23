@@ -8,6 +8,12 @@
 
   padding: 20px;
   margin-bottom: 50px;
+}
+
+.product_image_container {
+  width: 100%;
+  max-width: 300px;
+  min-height: 300px;
 
   position: relative;
 }
@@ -27,19 +33,13 @@
 
 .badge {
   position: absolute;
-  top: 19px;
-  left: 19px;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
 }
 
-@media (min-width: 720px) {
-  .productContainer {
-    max-width: 320px;
-  }
-}
 
-@media (min-width: 960px) {
+@media (min-width: 992px) {
 
-  .productContainer {
-    max-width: 320px;
-  }
 }
