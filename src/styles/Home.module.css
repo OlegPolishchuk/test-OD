@@ -4,33 +4,6 @@
   padding: 30px 0;
 }
 
-.productContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-
-  padding: 20px;
-  margin-bottom: 50px;
-}
-
-.product_description {
-  margin-top: 30px;
-}
-
-.product_description > div {
-  margin-top: 15px;
-}
-
-
-.price {
-  font-size: 30px;
-  color: var(--color-blue-700)
-}
-
-
 .button {
   background: var(--color-blue-500);
   color: #fff;
